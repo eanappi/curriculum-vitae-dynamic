@@ -1,3 +1,3 @@
 import Layout from './Layout.js'
 
-Layout()
+document.querySelector('body').innerHTML = Layout()
