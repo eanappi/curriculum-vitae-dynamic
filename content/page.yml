@@ -1,2 +1,28 @@
-# Global
-freelanceName: ERNESTO A. NAPPI
+# HOME
+realName: "ERNESTO A. NAPPI"
+freelancerSlogan: "A Freelance UI Designer y Web Developer"
+freelancerImage: "assets/images/banner/hero.png"
+
+# ABOUT
+whoIAm: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+dateOfBirth: "0 Januay 0000"
+email: "email@domain.com"
+phone: "+00 0 00 00000000"
+location: "0000, Federal District, DD"
+
+# SERVICES
+whatIDo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+
+# CALL TO ACTION
+callToAction: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+urlOfCurriculumVitae: "#"
+
+# PORTFOLIO
+myRecentWorks: "Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo."
+urlMoreWorks: "#"
+
+# CONTACT
+contactMe: "Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo."
+
+# FOOTER
+footer: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

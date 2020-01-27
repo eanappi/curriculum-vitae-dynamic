@@ -1,4 +1,4 @@
-const Layout = (data = []) => {
+const Layout = (page = []) => {
   const template = `
     <!--====== PRELOADER PART START ======-->
 
@@ -89,14 +89,14 @@ const Layout = (data = []) => {
                     <div class="col-xl-5 col-lg-6">
                         <div class="header-content-right">
                             <h4 class="sub-title">Hello, I’m</h4>
-                            <h1 class="title">${data.freelanceName}</h1>
-                            <p>A Freelance UI Designer & Web Developer</p>
+                            <h1 class="title">${page.realName}</h1>
+                            <p>${page.freelancerSlogan}</p>
                             <a class="main-btn" href="#work">View my Work</a>
                         </div> <!-- header content right -->
                     </div>
                     <div class="col-lg-6 offset-xl-1">
                         <div class="header-image d-none d-lg-block">
-                            <img src="assets/images/banner/hero.png" alt="hero">
+                            <img src="${page.freelancerImage}" alt="hero">
                         </div> <!-- header image -->
                     </div>
                 </div> <!-- row -->
@@ -130,15 +130,14 @@ const Layout = (data = []) => {
                 <div class="col-lg-8">
                     <div class="section-title text-center">
                         <h2 class="title">About Me</h2>
-                        <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+                        <p>${page.whoIAm}</p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about-content mt-50">
-                        <h5 class="about-title">Hi There! I'm Mark Parker</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h5 class="about-title">Hi There! I'm ${page.realName}</h5>
                         <ul class="clearfix">
                             <li>
                                 <div class="single-info d-flex align-items-center">
@@ -146,7 +145,7 @@ const Layout = (data = []) => {
                                         <i class="lni-calendar"></i>
                                     </div>
                                     <div class="info-text">
-                                        <p><span>Date of birth:</span> 8 June 1995</p>
+                                        <p><span>Date of birth:</span> ${page.dateOfBirth}</p>
                                     </div>
                                 </div> <!-- single info -->
                             </li>
@@ -156,7 +155,7 @@ const Layout = (data = []) => {
                                         <i class="lni-envelope"></i>
                                     </div>
                                     <div class="info-text">
-                                        <p><span>Email:</span> parker@mysite.com</p>
+                                        <p><span>Email:</span> ${page.email}</p>
                                     </div>
                                 </div> <!-- single info -->
                             </li>
@@ -166,7 +165,7 @@ const Layout = (data = []) => {
                                         <i class="lni-phone-handset"></i>
                                     </div>
                                     <div class="info-text">
-                                        <p><span>Phone:</span> +1-202-555-0138</p>
+                                        <p><span>Phone:</span> ${page.phone}</p>
                                     </div>
                                 </div> <!-- single info -->
                             </li>
@@ -176,7 +175,7 @@ const Layout = (data = []) => {
                                         <i class="lni-map-marker"></i>
                                     </div>
                                     <div class="info-text">
-                                        <p><span>Location:</span> 4373, El Centro, CA</p>
+                                        <p><span>Location:</span> ${page.location}</p>
                                     </div>
                                 </div> <!-- single info -->
                             </li>
@@ -265,7 +264,7 @@ const Layout = (data = []) => {
                 <div class="col-lg-8">
                     <div class="section-title text-center pb-30">
                         <h2 class="title">My Services</h2>
-                        <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+                        <p>${page.whatIDo}</p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -350,9 +349,9 @@ const Layout = (data = []) => {
                 <div class="col-xl-8 col-lg-9">
                     <div class="call-action-content text-center">
                         <h2 class="action-title">Have any project on mind?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nostrud.</p>
+                        <p>${page.callToAction}</p>
                         <ul>
-                            <li><a class="main-btn custom" href="#">download cv</a></li>
+                            <li><a class="main-btn custom" href="${page.urlOfCurriculumVitae}" target="_blank">download cv</a></li>
                         </ul>
                     </div> <!-- call action content -->
                 </div>
@@ -370,7 +369,7 @@ const Layout = (data = []) => {
                 <div class="col-lg-8">
                     <div class="section-title pb-25">
                         <h2 class="title">My Recent Works</h2>
-                        <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+                        <p>${page.myRecentWorks}</p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -475,7 +474,7 @@ const Layout = (data = []) => {
             <div class="row">
                 <div class="col-lg-12">
                     <div class="work-more text-center mt-50">
-                        <a class="main-btn" href="#">more works</a>
+                        <a class="main-btn" href="${page.urlMoreWorks}" target="_blank">more works</a>
                     </div> <!-- work more -->
                 </div>
             </div> <!-- row -->
@@ -492,7 +491,7 @@ const Layout = (data = []) => {
                 <div class="col-lg-8">
                     <div class="section-title text-center pb-25">
                         <h2 class="title">Get In Touch</h2>
-                        <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+                        <p>${page.contactMe}</p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -504,7 +503,7 @@ const Layout = (data = []) => {
                         </div>
                         <div class="contact-content">
                             <h6 class="contact-title">Address</h6>
-                            <p>123 Stree New York City , United States Of America 750</p>
+                            <p>${page.location}</p>
                         </div>
                     </div> <!-- contact box -->
                 </div>
@@ -515,8 +514,7 @@ const Layout = (data = []) => {
                         </div>
                         <div class="contact-content">
                             <h6 class="contact-title">Phone</h6>
-                            <p>+931 2222 5555</p>
-                            <p>+547 5554 6663</p>
+                            <p>${page.phone}</p>
                         </div>
                     </div> <!-- contact box -->
                 </div>
@@ -527,13 +525,12 @@ const Layout = (data = []) => {
                         </div>
                         <div class="contact-content">
                             <h6 class="contact-title">Email</h6>
-                            <p>support@yourmail.com</p>
-                            <p>info@helpline.com</p>
+                            <p>${page.email}</p>
                         </div>
                     </div> <!-- contact box -->
                 </div>
             </div> <!-- row -->
-            <div class="row">
+            <!--div class="row">
                 <div class="col-lg-12">
                     <div class="contact-map mt-60">
                         <div class="gmap_canvas">                            
@@ -541,7 +538,7 @@ const Layout = (data = []) => {
                         </div>
                     </div> <!-- contact map -->
                 </div>
-            </div> <!-- row -->
+            </div--> <!-- row -->
         </div> <!-- container -->
     </section>
 
@@ -558,7 +555,7 @@ const Layout = (data = []) => {
                             <a href="index.html">
                                 <img src="assets/images/logo-2.png" alt="Logo">
                             </a>
-                            <p class="mt-">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p class="mt-">${page.footer}</p>
                             <ul>
                                 <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
                                 <li><a href="#"><i class="lni-twitter-original"></i></a></li>
