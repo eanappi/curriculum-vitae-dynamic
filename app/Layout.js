@@ -572,7 +572,7 @@ const Layout = (page = []) => {
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright-text text-center pt-20">
-                            <p>Copyright © 2022. Template Crafted by <a href="https://uideck.com" rel="nofollow">UIdeck</a></p>
+                            <p>Copyright © ${page.copyYear}. Powered by <a href="${page.poweredBy.url}" rel="nofollow" target="_blank">${page.poweredBy.name}</a></p>
                         </div> <!-- copyright text -->
                     </div>
                 </div> <!-- row -->
