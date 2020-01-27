@@ -1,4 +1,4 @@
-const Layout = () => {
+const Layout = (data = []) => {
   const template = `
     <!--====== PRELOADER PART START ======-->
 
@@ -89,7 +89,7 @@ const Layout = () => {
                     <div class="col-xl-5 col-lg-6">
                         <div class="header-content-right">
                             <h4 class="sub-title">Hello, I’m</h4>
-                            <h1 class="title">Mark Parker</h1>
+                            <h1 class="title">${data.freelanceName}</h1>
                             <p>A Freelance UI Designer & Web Developer</p>
                             <a class="main-btn" href="#work">View my Work</a>
                         </div> <!-- header content right -->
