@@ -1,4 +1,4 @@
-(function($){
+const Main = (jQuery) => {
     
     "use strict";
     
@@ -135,4 +135,6 @@
     
     
     
-}(jQuery));
+}
+
+export default Main
