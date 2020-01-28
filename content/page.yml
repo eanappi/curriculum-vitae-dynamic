@@ -11,17 +11,36 @@ phone: "+00 0 00 00000000"
 location: "0000, Federal District, DD"
 skills:
   - name: "HTML"
-    percentage: 80
+    percentage: "80"
   - name: "CSS"
-    percentage: 60
+    percentage: "60"
   - name: "Phtoshop"
-    percentage: 50
+    percentage: "50"
   - name: "Sketch"
-    percentage: 90
+    percentage: "90"
 
 
 # SERVICES
 whatIDo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+services:
+  - icon: "lni-code-alt"
+    title: "Web Design"
+    description: "Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt."
+  - icon: "lni-code-alt"
+    title: "Web Design"
+    description: "Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt."
+  - icon: "lni-code-alt"
+    title: "Web Design"
+    description: "Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt."
+  - icon: "lni-code-alt"
+    title: "Web Design"
+    description: "Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt."
+  - icon: "lni-code-alt"
+    title: "Web Design"
+    description: "Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt."
+  - icon: "lni-code-alt"
+    title: "Web Design"
+    description: "Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt."
 
 # CALL TO ACTION
 callToAction: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
