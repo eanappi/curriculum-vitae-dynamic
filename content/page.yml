@@ -27,7 +27,7 @@ contactMe: "Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus,
 # FOOTER
 footer: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-# WEBSITE CONFIG
+# CONFIG
 copyYear: "2020"
 poweredBy:
   name: eanappi
