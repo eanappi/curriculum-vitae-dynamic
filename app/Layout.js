@@ -14,7 +14,7 @@ const Layout = (page = []) => {
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo.png" alt="Logo">
+                                <img src="${page.logoHeader}" alt="Logo">
                             </a> <!-- Logo -->
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
@@ -309,7 +309,7 @@ const Layout = (page = []) => {
                     <div class="col-lg-8">
                         <div class="footer-content text-center">
                             <a href="index.html">
-                                <img src="assets/images/logo-2.png" alt="Logo">
+                                <img src="${page.logoFooter}" alt="Logo">
                             </a>
                             <p class="mt-">${page.footer}</p>
                             <ul>
