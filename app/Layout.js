@@ -1,6 +1,7 @@
 import Skills from './Skills.js'
 import Services from './Services.js'
 import Works from './Works.js'
+import SocialNetwork from './SocialNetwork.js'
 
 const Layout = (page = []) => {
   const template = `
@@ -90,10 +91,7 @@ const Layout = (page = []) => {
                         <div class="col-lg-12">
                             <div class="header-social-icon">
                                 <ul>
-                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                    <li><a href="#"><i class="lni-behance-original"></i></a></li>
-                                    <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+                                  ${SocialNetwork(page.socialNetwork)}
                                 </ul>
                             </div> <!-- header social -->
                         </div>
@@ -315,10 +313,7 @@ const Layout = (page = []) => {
                             </a>
                             <p class="mt-">${page.footer}</p>
                             <ul>
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-pinterest"></i></a></li>
-                                <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+                                ${SocialNetwork(page.socialNetwork)}
                             </ul>
                         </div> <!-- footer content -->
                     </div>
