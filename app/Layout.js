@@ -1,3 +1,5 @@
+import Skills from './Skills.js'
+
 const Layout = (page = []) => {
   const template = `
     <!--====== HEADER PART START ======-->
@@ -162,72 +164,7 @@ const Layout = (page = []) => {
                     </div> <!-- about content -->
                 </div>
                 <div class="col-xl-5 offset-xl-1 col-lg-6">
-                    <div class="about-skills pt-25">
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title">HTML</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter">80</span>
-                                    </div>
-                                    %
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="80"></div>
-                                </div>
-                            </div>
-                        </div> <!-- skill item -->
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title">CSS</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter">60</span>
-                                    </div>
-                                    %
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="60"></div>
-                                </div>
-                            </div>
-                        </div> <!-- skill item -->
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title">Photoshop</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter">50</span>
-                                    </div>
-                                    %
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="50"></div>
-                                </div>
-                            </div>
-                        </div> <!-- skill item -->
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title">Sketch</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter">90</span>
-                                    </div>
-                                    %
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="90"></div>
-                                </div>
-                            </div>
-                        </div> <!-- skill item -->
-                    </div> <!-- about skills -->
+                    ${Skills(page.skills)}
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->

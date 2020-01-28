@@ -9,6 +9,16 @@ dateOfBirth: "0 Januay 0000"
 email: "email@domain.com"
 phone: "+00 0 00 00000000"
 location: "0000, Federal District, DD"
+skills:
+  - name: "HTML"
+    percentage: 80
+  - name: "CSS"
+    percentage: 60
+  - name: "Phtoshop"
+    percentage: 50
+  - name: "Sketch"
+    percentage: 90
+
 
 # SERVICES
 whatIDo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
