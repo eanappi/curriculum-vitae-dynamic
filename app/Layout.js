@@ -2,6 +2,7 @@ import Skills from './Skills.js'
 import Services from './Services.js'
 import Works from './Works.js'
 import SocialNetwork from './SocialNetwork.js'
+import GoogleMap from './GoogleMap.js'
 
 const Layout = (page = []) => {
   const template = `
@@ -126,7 +127,7 @@ const Layout = (page = []) => {
                                         <i class="lni-calendar"></i>
                                     </div>
                                     <div class="info-text">
-                                        <p><span>Date of birth:</span> ${page.dateOfBirth}</p>
+                                        <p><span>Date of birth:</span> ${page.birth}</p>
                                     </div>
                                 </div> <!-- single info -->
                             </li>
@@ -289,9 +290,7 @@ const Layout = (page = []) => {
             <div class="row">
                 <div class="col-lg-12">
                     <div class="contact-map mt-60">
-                        <div class="gmap_canvas">                            
-                            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Mission%20District%2C%20San%20Francisco%2C%20CA%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                        </div>
+                        ${GoogleMap(page.map)}
                     </div> <!-- contact map -->
                 </div>
             </div> <!-- row -->
