@@ -42,7 +42,7 @@ const Layout = (page = []) => {
             <div class="header-shape shape-one layer" data-depth="0.10">
                 <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
             </div> <!-- header shape -->
-            <div class="header-shape shape-tow layer" data-depth="0.30">
+            <!--div class="header-shape shape-tow layer" data-depth="0.30">
                 <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
             </div> <!-- header shape -->
             <div class="header-shape shape-three layer" data-depth="0.40">
