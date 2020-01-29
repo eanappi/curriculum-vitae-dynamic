@@ -14,7 +14,7 @@ const Layout = (page = []) => {
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="${page.logoHeader}" alt="Logo">
+                                <img src="${page.logoHeader}" alt="Logo" height="50">
                             </a> <!-- Logo -->
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
@@ -286,7 +286,7 @@ const Layout = (page = []) => {
                     </div> <!-- contact box -->
                 </div>
             </div> <!-- row -->
-            <!--div class="row">
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="contact-map mt-60">
                         <div class="gmap_canvas">                            
@@ -294,7 +294,7 @@ const Layout = (page = []) => {
                         </div>
                     </div> <!-- contact map -->
                 </div>
-            </div--> <!-- row -->
+            </div> <!-- row -->
         </div> <!-- container -->
     </section>
 
@@ -309,7 +309,7 @@ const Layout = (page = []) => {
                     <div class="col-lg-8">
                         <div class="footer-content text-center">
                             <a href="index.html">
-                                <img src="${page.logoFooter}" alt="Logo">
+                                <img src="${page.logoFooter}" alt="Logo" height="50">
                             </a>
                             <p class="mt-">${page.footer}</p>
                             <ul>

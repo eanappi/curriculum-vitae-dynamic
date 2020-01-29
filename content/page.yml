@@ -1,5 +1,5 @@
 # HOME
-logoHeader: "assets/images/logo.png"
+logoHeader: "assets/images/logo-header.svg"
 realName: "ERNESTO A. NAPPI"
 freelancerSlogan: "A Freelance UI Designer y Web Developer"
 freelancerImage: "assets/images/banner/hero.png"
@@ -86,9 +86,10 @@ contactMe: "Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus,
 
 # FOOTER
 footer: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-logoFooter: "assets/images/logo-2.png"
+logoFooter: "assets/images/logo-footer.svg"
 
-# CONFIG
+# WEBSITE CONFIG
+title: 
 copyYear: "2020"
 poweredBy:
   name: eanappi
