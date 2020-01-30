@@ -1,26 +1,12 @@
 const SocialNetwork = (socials) => {
-  let template = `
+
+  let template = socials.map(social => `
       <li>
-        <a href="${socials.facebook}" target="_blank">
-          <i class="lni-facebook-filled"></i>
+        <a href="${social.link}" target="_blank">
+          <i class="${social.icon}"></i>
         </a>
       </li>
-      <li>
-        <a href="${socials.twitter}" target="_blank">
-          <i class="lni-twitter-original"></i>
-        </a>
-      </li>
-      <li>
-        <a href="${socials.behance}" target="_blank">
-          <i class="lni-behance-original"></i>
-        </a>
-      </li>
-      <li>
-        <a href="${socials.linkedin}" target="_blank">
-          <i class="lni-linkedin-original"></i>
-        </a>
-      </li>
-  `
+  `).join('')
 
   return template
 }
