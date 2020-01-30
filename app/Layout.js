@@ -202,9 +202,11 @@ const Layout = (page = []) => {
                     <div class="call-action-content text-center">
                         <h2 class="action-title">Have any project on mind?</h2>
                         <p>${page.callToAction}</p>
-                        <ul>
-                            <li><a class="main-btn custom" href="${page.urlOfCurriculumVitae}" target="_blank">download cv</a></li>
-                        </ul>
+                        ${page.urlOfCurriculumVitae ? `
+                            <ul>
+                                <li><a class="main-btn custom" href="${page.urlOfCurriculumVitae}" target="_blank">download cv</a></li>
+                            </ul>
+                        ` : ``}
                     </div> <!-- call action content -->
                 </div>
             </div> <!-- row -->
@@ -230,9 +232,11 @@ const Layout = (page = []) => {
             </div> <!-- row -->
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="work-more text-center mt-50">
-                        <a class="main-btn" href="${page.urlMoreWorks}" target="_blank">more works</a>
-                    </div> <!-- work more -->
+                    ${page.urlMoreWorks ? `
+                        <div class="work-more text-center mt-50">
+                            <a class="main-btn" href="${page.urlMoreWorks}" target="_blank">more works</a>
+                        </div> <!-- work more -->
+                    ` : ``}
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->

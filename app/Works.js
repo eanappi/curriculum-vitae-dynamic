@@ -10,7 +10,9 @@ const Works = (works = []) => {
                       <h3 class="work-title">${item.title}</h3>
                       <ul>
                           <li><a class="image-popup" href="${item.image}"><i class="lni-plus"></i></a></li>
-                          <li><a href="${item.link}" target="_blank"><i class="lni-link"></i></a></li>
+                          ${item.link ? `
+                            <li><a href="${item.link}" target="_blank"><i class="lni-link"></i></a></li>
+                          ` : ``}
                       </ul>
                   </div>
               </div>
